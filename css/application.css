@@ -1,0 +1,34 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.maintable {
+  background-color: gray;
+  height: 100vh; }
+  .maintable .order-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20%; }
+    .maintable .order-container button {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      border-radius: 3px; }
+
+.menu ul li {
+  float: right;
+  list-style: none;
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+
+.customer {
+  margin: 20px 0px;
+  display: inline-flex; }
+  .customer .customer-img {
+    background-image: url(../img/dark-helmet.jpg);
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 75px; }
