@@ -28,7 +28,7 @@ body {
   margin: 20px 0px;
   display: inline-flex; }
   .customer .customer-img {
-    background-image: url(../img/dark-helmet.jpg);
+    background-image: url(../img/Dark-helmet.jpg);
     background-size: cover;
     border: 1px solid black;
     border-radius: 75px; }
