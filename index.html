@@ -8,11 +8,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
-    <link rel="icon" href="favicon.ico?" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="favicon.ico?" type="image/x-icon"> -->
     <!-- Place favicon.ico in the root directory -->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link media="all" type="text/css" rel="stylesheet" href="css/application.css" />
     <!-- Latest compiled and minified CSS -->
@@ -24,10 +24,7 @@
         crossorigin="anonymous"></script>
     <!--<script src="js/behavior.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="js/main.js"></script>
-    <script src="js/ripple.js"></script>
-    <!--<script src="js/file.js"></script>-->
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -48,25 +45,15 @@
         <div class="content container">
 
             <div class="order-container">
-              <button class="order-button" id="order-btn">Order now</button>
+              <button class="order-button" id="order-btn"><a href="shop/shop.html">Order now</a></button>
             </div>
         </div>
       </div>
-      <section class="customer-review row">
-        <div class="col-xs-12 customer customer-1">
-          <div class="customer-img col-xs-4"></div>
-<p>
-  <i>
-    "Wow. What a great product. I never have to get up to feed my dog ever again!"
-  </i>
-  </br>
-  - Doug, unemployed, 25
-</p>
 
-        </div> 
-        <div class="col-xs-12 customer customer-1">
-          <div class="customer-img col-xs-4"></div>
-<p>
+      <section class="customer-review row">
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-1 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
   <i>
     "Wow. What a great product. I never have to get up to feed my dog ever again!"
   </i>
@@ -75,8 +62,39 @@
 </p>
 
         </div>
-        <div class="col-xs-12 customer customer-1"></div>
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-2 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
+  <i>
+    "Bark!"
+  </i>
+  </br>
+  - Dog, unemployed, 10
+</p>
+
+        </div>
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-3 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
+  <i>
+    "You do know that I'm not an actual dog, right?"
+  </i>
+  </br>
+  - Snoop Dogg, not an actual Dog, 40-50
+</p>
+
+        </div>
+      </section>  
+
+      <section class="newsletter-container row">
+        <form action="" id="newsletter-form" class="col-xs-12" onsubmit="sendNewsletter();" novalidate>
+          <p class="col-xs-12">Sign up for our company newsletter and we'll keep you updated on our sweet products!</p>
+          <input type="email" name="newsletter-email" id="newsletter-email" class="newsletter-email col-xs-9 center-block" placeholder="johndoe@example.com"/>
+          <button type="submit" name="newsletter-btn" class="order-button center-block">Sign up</button>
+        </form>
       </section>
+
+    <script src="js/bundle.js"></script>
 </body>
 
 </html>
